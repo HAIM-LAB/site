@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  ------------------------------------ -->
+    <meta charset="utf-8" />
+    <title>Research</title>
+
+    <!-- Mobile Specific Metas
+  ------------------------------------ -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- FONT
+  ------------------------------------ -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lustria|Lato:400,700,400italic|Playfair+Display:700,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  ------------------------------------ -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="//amrl.cs.utexas.edu/assets/style.css" />
+
+    <!-- Favicon
+  ------------------------------------ -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+    <!-- Required for GetSimple Plugins
+  ------------------------------------ -->
+    <meta name="keywords" content="courses, computer science, robotics" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-97CQQCDP41"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-97CQQCDP41');
+  </script>
+
+  <body id="index">
+    <!-- Primary Page Layout
+  ------------------------------------ -->
+    <div id="container" class="container">
+      <div class="row">
+        <nav class="twelve columns">
+          <hr />
+          <br />
+          <h1 style="text-align: center">
+            Humans, Hybrid AI, and Machines (HAIM) Lab
+          </h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="/style.css"> </a>
+            </li>
+
+            <li>
+              <a href="/main.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="/members.html"> Members </a>
+            </li>
+
+            <li class="current active">
+              <a href="/research.html"> Research </a>
+            </li>
+
+            <li>
+              <a href="/publication.html"> Publication </a>
+            </li>
+
+            <li>
+              <a href="/prospective.html"> Prospective students </a>
+            </li>
+          </ul>
+          <hr />
+        </nav>
+      </div>
+      <div class="row">
+        <section class="twelve columns">
+          <h4 id="themes">Themes</h4>
+
+          <p>Our research spans three broad themes:</p>
+
+          <ol>
+            <li>
+              <strong>Perception for long-term autonomy</strong>, including
+              long-term vector mapping, human-in-the-loop SLAM, competency-aware
+              perception, and robust vision-only navigation.
+            </li>
+            <li>
+              <strong
+                >Customizability and Failure recovery for deployed
+                robots</strong
+              >, including program synthesis and repair from end-user
+              demonstrations, competency-aware planning, and automated
+              multi-sensor recalibration.
+            </li>
+            <li>
+              <strong>Multi-agent navigation and motion planning</strong>,
+              including high-speed multiagent navigation in adversarial domains,
+              and time-optimal control.
+            </li>
+          </ol>
+
+          <hr />
+
+          <h4 id="code">Code</h4>
+
+          <p>
+            All of the public code associated with our research can be found at
+            <a href="https://github.com/ut-amrl/">https://github.com/ut-amrl/</a
+            >.
+          </p>
+
+          <hr />
+
+          <h3 id="projects">Projects</h3>
+
+          <h4 id="introspective-autonomy">Introspective Autonomy</h4>
+
+          <p>
+            <img
+              src="https://amrl.cs.utexas.edu/IntrospectiveAutonomy/assets/images/overview.png"
+              alt="Introspective Autonomy"
+            />
+            When robots are deployed in novel environments, developers cannot
+            fully foresee what errors the robots may make, what may be the root
+            causes of such errors, how human confidence in the robots’ abilities
+            may change as a result of such errors, and how well the robots may
+            learn to autonomously overcome errors and reduce the reliance on
+            human assistance. This project develops a comprehensive solution to
+            these challenges by introducing competence-aware autonomy, enabling
+            robots to learn what aspects of the environment, the situation, and
+            the task lead to varying levels of success. Consequently, the
+            project transforms the ability of researchers and practitioners to
+            deploy robots in unstructured environments where limited knowledge
+            is available prior to deployment. This enables workers with limited
+            robotics expertise to deploy robots more safely in unstructured
+            environments and teach them over time to be progressively
+            independent. More information is available on the
+            <a href="https://amrl.cs.utexas.edu/IntrospectiveAutonomy"
+              >Introspective Autonomy project website</a
+            >.
+          </p>
+
+          <h4 id="small-to-medium-autonomous-delivery-system-smads">
+            Small to Medium Autonomous Delivery System (SMADS)
+          </h4>
+
+          <p>
+            <a href="https://smads.netlify.app/nav.mp4"
+              ><img
+                src="/assets/images/research/smads_thumbnail.jpg"
+                alt="SMADS"
+            /></a>
+            SMADS is a case study on the development of an end-to-end software
+            stack to facilitate autonomous delivery by a fleet of heterogeneous
+            robots in an urban environment. This system includes the ability for
+            users to query an autonomous delivery via an iOS application and
+            track progress while the robot is en route to the delivery location.
+            This system has successfully been deployed over 5 business days as a
+            lemonade delivery system on the UT Campus and highlights challenges
+            in the current state of the art approaches to navigation and
+            localization in urban environments with complex terrain, vehicles
+            and crowds of pedestrians. This project was inspired by the idea of
+            using robotics and A.I. to help solve societal problems and was
+            funded under UT
+            <a href="https://bridgingbarriers.utexas.edu/">Good Systems</a>
+            which aims to employ A.I. for societal benefit. You can learn more
+            at the SMADS project
+            <a href="https://smads.netlify.app/">website</a> and see its source
+            code on <a href="https://github.com/UTSMADS">Github</a>.
+          </p>
+
+          <hr />
+
+          <h4 id="introspective-vision-for-obstacle-avoidance-ivoa">
+            Introspective Vision for Obstacle Avoidance (IVOA)
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img src="/assets/images/research/iVOA.JPG" alt="IVOA" />
+                </td>
+                <td>
+                  Vision, as an inexpensive yet information rich sensor, is
+                  commonly used for perception on autonomous mobile robots.
+                  However, vision systems are prone to errors from various
+                  sources such as image saturation, blur, and texture-less
+                  scenes. In this project, we develop an approach for
+                  self-supervised learning of a model that can predict failures
+                  of stereo vision-based obstacle avoidance systems. The learned
+                  model predicts the probability of different types of failure
+                  (false positive and false negative) and pinpoints the location
+                  of the error on the input image. (<a href="/papers/iVOA.pdf"
+                    >More Information</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="expanding-a-x">
+            <a href="/papers/expanding_astar_aamas_extended_abstract.pdf"
+              >Expanding A* (X*)</a
+            >
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="papers/expanding_astar_aamas_extended_abstract.pdf"
+                    ><img
+                      src="/assets/images/research/xstar.png"
+                      alt="X* Expansion"
+                  /></a>
+                </td>
+                <td>
+                  Expanding A* is an anytime multiagent path planner which
+                  leverages two observations: 1) conflicts between multi-agent
+                  plans often have geometrically local resolutions within a
+                  small repair window, even if such local resolutions are not
+                  globally optimal; and 2) the partial search tree for such
+                  local resolutions can then be iteratively improved over
+                  successively larger windows to eventually compute the global
+                  optimal plan. X* operates by replanning locally, and then, as
+                  shown in the image, growing the scope of the local repair as
+                  time permits. (<a
+                    href="/papers/expanding_astar_aamas_extended_abstract.pdf"
+                    >More Information</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="smt-based-robot-transition-repair">
+            <a href="srtr.html">SMT-based Robot Transition Repair</a>
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img src="/assets/images/research/srtr.png" alt="SRTR" /> An
+                  example failure case from the Robocup Small Sized League
+                  domain. Blue lines represent the robot path, and orange lines
+                  the ball path. The left image shows a failure case in which
+                  the robot fails to transition into the kick state, while the
+                  right image shows the desired behavior.
+                </td>
+                <td>
+                  State machines are a common tool for building controllers for
+                  various robotic tasks. The effectiveness of a state machine is
+                  often dependent on the parameters used for transition and
+                  emissions, and in many cases these parameters are a source of
+                  human introduced error. The goal of this research is to create
+                  a system which does the following: 1) Identifies state
+                  machines and extract their parameters from source code using
+                  static analysis. 2) Detects faults in these state machines via
+                  anomaly detection or domain-specific error functions. 3)
+                  Identifies a modification to the transition and emission
+                  parameters for the state machine that corrects the error. (<a
+                    href="srtr.html"
+                    >More Information</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="time-optimal-control-for-omnidirectional-robots">
+            Time-Optimal Control For Omnidirectional Robots
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img src="/assets/images/research/tsocs.png" alt="NTOC" />
+                </td>
+                <td>
+                  Omnidirectional robots are used in a number of domains,
+                  including service mobile robots, warehouse robots, and robot
+                  soccer. Despite their popularity, true time-optimal control of
+                  omnidirectional robots with acceleration and velocity limits
+                  remains an unsolved problem. This research aims to develop
+                  algorithms with bounded run-time to solve the time-optimal
+                  control for omnidirectional robots, while producing
+                  numerically stable solutions that may be used in iterative
+                  closed-loop control under sensing and actuation uncertainty.
+                  (<a
+                    href="https://www.joydeepb.com/Publications/iros2018_tsocs.pdf"
+                    >More Information</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="making-high-performance-robots-accessible">
+            Making High-Performance Robots Accessible
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://www.instagram.com/p/BzrYJI9hTBI/"
+                    ><img
+                      src="/assets/images/research/jsBots.png"
+                      alt="Robot maze with monster"
+                  /></a>
+                </td>
+                <td>
+                  Our robots present an array of interesting research problems,
+                  as evidence by what is described here. Given their intriguing
+                  capabilities, we desired to share them with novices. In order
+                  to make this possible, we had to ensure safety of both users
+                  and robots as well as a much easier development experience.
+                  This involved significant engineering in building out a
+                  carefully designed layer of abstraction on top of the existing
+                  <a href="/minutebots">Minutebots</a> codebase. Further efforts
+                  made programming and viewing the robots possible solely in a
+                  Web browser. We put our system to the test in running a
+                  week-long outreach workshop for HS students. A video of a
+                  student-written program navigating through a maze with a
+                  monster is linked to the left. See our
+                  <a href="https://github.com/ut-amrl/robo-js"
+                    >GitHub repository</a
+                  >
+                  for more information.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4
+            id="friction-based-kinematic-model-for-skid-steer-wheeled-mobile-robots"
+          >
+            Friction-Based Kinematic Model for Skid-Steer Wheeled Mobile Robots
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="/assets/images/research/skid_steer_kinematic_model1.jpg"
+                    alt="skid_steer_kin1"
+                  />
+                  <img
+                    src="/assets/images/research/skid_steer_kinematic_model2.jpg"
+                    alt="skid_steer_kin2"
+                  />
+                </td>
+                <td>
+                  Skid-steer drive systems are widely used in mobile robot
+                  platforms. Such systems are subject to significant slippage
+                  and skidding during normal operation due to their nature. The
+                  ability to predict and compensate for such slippages in the
+                  forward kinematics of these types of robots is of great
+                  importance and provides the means for accurate control and
+                  safe navigation. In this work, we propose a new kinematic
+                  model capable of slip prediction for skid-steer wheeled mobile
+                  robots (SSWMRs) leveraging the wheel-ground contact model. (<a
+                    href="/papers/icra2019_skid_steer_kinematics.pdf"
+                    >More Information</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="multiple-model-learning-for-ground-robots">
+            Multiple Model Learning for Ground Robots
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://youtu.be/DgxCvT-bU4A"
+                    ><img
+                      src="/assets/images/research/multimodel.jpg"
+                      alt="Multi modal learning"
+                  /></a>
+                  <img
+                    src="/assets/images/research/multimodel2.jpg"
+                    alt="Multi modal learning"
+                  />
+                </td>
+                <td>
+                  Having an accurate motion model for a robot is equivalent to
+                  being able to accurately predict the behavior of the robot,
+                  which in turn provides the means for accurate control.
+                  Learning a motion model could be achieved through various
+                  system identification methods, which essentially train a
+                  function approximator for this purpose. However, the dynamics
+                  of a robot could not always be expressed within one single
+                  model, or in order for a single model to be complex and
+                  expressive enough, one should train it with extensive amount
+                  of training data. We approach this problem by breaking it into
+                  smaller pieces and learn multiple simple models rather than
+                  one single complex model. The robot could then switch between
+                  these models and choose the appropriate one at each time. We
+                  apply this method to the case of a ground robot and show how
+                  multiple models could be learned for different types of
+                  terrain to improve the overall motion model accuracy for the
+                  robot.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="delta-calibration">Delta Calibration</h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://youtu.be/xYmHMPCJhGA"
+                    ><img
+                      src="/assets/images/research/deltacalvideo.jpg"
+                      alt="Delta Calibration Video"
+                  /></a>
+                </td>
+                <td>
+                  Delta-Calibration is an automatic method for extrinsic
+                  calibration of sensors based on ego-motion. Delta-Calibration
+                  involves a closed form solution to the extrinsic calibration
+                  given necessary ego-motions performed by rigid bodies of
+                  connected sensors. An optimization based solution to
+                  Delta-Calibration can calculate even with limited axes of
+                  ego-motion, and limited information in the environment. (<a
+                    href="https://github.com/umass-amrl/DeltaCalibration"
+                    >GitHub repository</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="human-in-the-loop-slam-hitl-slam">
+            Human in the loop SLAM (HitL SLAM)
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img src="/assets/images/research/hitl1.jpg" alt="SLAM1" />
+                  <img src="/assets/images/research/hitl2.jpg" alt="SLAM2" />
+                </td>
+                <td>
+                  Autonomous mapping of environments is challenging, especially
+                  when areas may be very large and subject to frequent minor
+                  changes. Currently, fully autonomous state-of-the-art mapping
+                  methods still struggle when faced with difficult environments
+                  and/or novice users. Using a variety of analytical and
+                  non-linear optimization tools, this project is aimed at
+                  boosting the accuracy and success rates of mapping algorithms,
+                  with minimal effort from a human. (<a
+                    href="https://www.joydeepb.com/Publications/aaai2018_hitl-slam.pdf"
+                    >More Information</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4
+            id="computationally-efficient-safe-navigation-using-stereo-vision"
+          >
+            Computationally Efficient, Safe Navigation Using Stereo Vision
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img src="/assets/images/research/jpp1.png" alt="SLAM1" />
+                  <img src="/assets/images/research/jpp2.png" alt="SLAM1" />
+                </td>
+                <td>
+                  This research focuses on integrated planning and perception
+                  for local obstacle avoidance using stereo RGB cameras for
+                  autonomous mobile robots. By integrating planning and
+                  perception, we expect to significantly reduce the
+                  computational requirements for safe navigation, while still
+                  remaining robust to arbitrary obstacles in the robot’s path.
+                  The test platform for this research is a Clearpath Jackal UGV.
+                  (<a href="https://github.com/umass-amrl/jpp"
+                    >GitHub repository</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="graph-planning-in-dynamic-adversarial-multi-agent-domains">
+            Graph Planning in Dynamic Adversarial Multi-Agent Domains
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img
+                    src="/assets/images/research/scaffold.png"
+                    alt="Scaffolding"
+                  />
+                </td>
+                <td>
+                  One of the common approaches to motion planning in continuous
+                  space is to discretize the search space using a graph or tree
+                  and search over that reduced space. There are many approaches
+                  and decompositions that aid in constructing such graphs. In
+                  order to supplement these existing graph planning algorithms
+                  in dynamic domains with moving obstacles, we introduce
+                  strategies for supplementing probabilistic roadmaps with
+                  dynamic obstacle-dependent sub-graphs to aid in the search of
+                  high-quality paths while requiring only a coarse offline
+                  graph. (<a
+                    href="//www.joydeepb.com/Publications/planrob2017_scaffold.pdf"
+                    >More Information</a
+                  >).
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr />
+
+          <h4 id="multi-human-single-robot-simultaneous-interaction">
+            Multi-Human Single Robot Simultaneous Interaction
+          </h4>
+
+          <table class="research_table_hack">
+            <tbody>
+              <tr>
+                <td>
+                  <img src="/assets/images/research/cone1.png" alt="Cone" />
+                  <img src="/assets/images/research/cone2.jpg" alt="Cone" />
+                </td>
+                <td>
+                  In order for robots to engage fully with humans, they must be
+                  able to communicate with multiple humans simultaneously. This
+                  project aims to develop an omni-directional interface for
+                  multiple humans to ask a robot questions and a method for
+                  finding the most useful way for the robot to answer all of
+                  those questions simultaneously.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+      <hr />
+    </div>
+    <!-- close container -->
+    <!-- End Document
+  ------------------------------------ -->
+  </body>
+</html>
+

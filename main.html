@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+  ------------------------------------ -->
+    <meta charset="utf-8" />
+    <title>Home</title>
+
+    <!-- Mobile Specific Metas
+  ------------------------------------ -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+
+    <!-- FONT
+  ------------------------------------ -->
+    <link
+      href="//fonts.googleapis.com/css?family=Lustria|Lato:400,700,400italic|Playfair+Display:700,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- CSS
+  ------------------------------------ -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+    />
+    <link rel="stylesheet" href="//amrl.cs.utexas.edu/assets/style.css" />
+
+    <!-- Favicon
+  ------------------------------------ -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+    <!-- Required for GetSimple Plugins
+  ------------------------------------ -->
+    <meta name="keywords" content="courses, computer science, robotics" />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-97CQQCDP41"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-97CQQCDP41');
+  </script>
+
+  <body id="index">
+    <!-- Primary Page Layout
+     Home, Members, Research, Publication, Prospective students
+  ------------------------------------ -->
+    <div id="container" class="container">
+      <div class="row">
+        <nav class="twelve columns">
+          <hr />
+          <br />
+          <h1 style="text-align: center">
+            Humans, Hybrid AI, and Machines (HAIM) Lab
+          </h1>
+          <hr />
+          <ul>
+            <li>
+              <a href="/style.css"> </a>
+            </li>
+
+            <li class="current active">
+              <a href="/main.html"> Home </a>
+            </li>
+
+            <li>
+              <a href="/members.html"> Members </a>
+            </li>
+
+            <li>
+              <a href="/research.html"> Research </a>
+            </li>
+
+            <li>
+              <a href="/publication.html"> Publication </a>
+            </li>
+
+            <li>
+              <a href="/prospective.html"> Prospective students </a>
+            </li>
+          </ul>
+          <hr />
+        </nav>
+      </div>
+      <div class="row">
+        <section class="twelve columns">
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+          />
+
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+          />
+
+          <style>
+            button.slick-prev.slick-arrow::before {
+              color: black;
+            }
+
+            button.slick-next.slick-arrow::before {
+              color: black;
+            }
+          </style>
+
+          <!-- <div class="main_carousel">
+            <div>
+              <img
+                class="center-image"
+                src="./assets/images/robots/AHG_Ribbon_Cutting.jpg"
+              />
+            </div>
+            <div style="visibility: hidden">
+              <img
+                class="center-image"
+                src="./assets/images/robots/smads.png"
+              />
+            </div>
+            <div style="visibility: hidden">
+              <img
+                class="center-image"
+                src="./assets/images/robots/jackal_navigation.png"
+              />
+            </div>
+            <div style="visibility: hidden">
+              <img
+                class="center-image"
+                src="./assets/images/robots/spot_stairs.png"
+              />
+            </div>
+            <div style="visibility: hidden">
+              <img
+                class="center-image"
+                src="./assets/images/robots/ut_automata.png"
+              />
+            </div>
+            <div style="visibility: hidden">
+              <img
+                class="center-image"
+                src="./assets/images/robots/automata_group.jpg"
+              />
+            </div>
+          </div> -->
+
+          <script
+            type="text/javascript"
+            src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+          ></script>
+
+          <script
+            type="text/javascript"
+            src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+          ></script>
+
+          <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+          ></script>
+
+          <script type="text/javascript">
+            $('.main_carousel')
+              .children('div')
+              .each(function () {
+                $(this).css('visibility', 'visible');
+              });
+            $(document).ready(function () {
+              $('.main_carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 6250,
+                fade: true,
+                cssEase: 'linear',
+                dots: true,
+                infinite: true,
+              });
+            });
+          </script>
+
+          <p>
+            The Autonomous Mobile Robotics Laboratory (AMRL), led by professor
+            <a href="//www.joydeepb.com">Joydeep Biswas</a>, performs research
+            in robotics to continually make robots more autonomous, accurate,
+            robust, and efficient, in real-world unstructured environments. We
+            are working on a wide range of problems, including perception for
+            long-term autonomy, high-speed multi-agent planning in adversarial
+            domains, time-optimal control for omnidirectional robots, and
+            correcting and learning complex autonomous behaviors from human
+            interactions.
+          </p>
+
+          <p>
+            The AMRL is comprised of students, robots, and facilities across two
+            universities - the Computer Science department at UT Austin, and the
+            College of Information and Computer Sciences, University of
+            Massachusetts Amherst.
+          </p>
+        </section>
+      </div>
+      <hr />
+    </div>
+    <!-- close container -->
+    <!-- End Document
+  ------------------------------------ -->
+  </body>
+</html>
+
