@@ -409,3 +409,61 @@ footer small {
 .research_table_hack td:first-child {
   width: 200px;
 }
+
+/* Research page project cards */
+.project-cards {
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+  padding: 0;
+  list-style: none;
+}
+
+.project-card img {
+  width: 40%;
+  height: auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  border-radius: 15px;
+  padding: 1.5rem;
+  margin: 1rem;
+  width: calc(45% - 4rem);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.project-card strong {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.card-images {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.card-images img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  margin: 0.5rem;
+}
